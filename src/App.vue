@@ -1,7 +1,9 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import { useTestData, useReadArray } from './stores/jptest';
-console.log(useReadArray('working'))
+import { useTestData, } from './stores/jptest';
+let data = useTestData()
+console.log(data)
+
 </script>
 
 <template>
